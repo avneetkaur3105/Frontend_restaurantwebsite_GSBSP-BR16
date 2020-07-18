@@ -13,7 +13,7 @@ body{
     font-size: 20px;
 }
     .landing{
-        background-image: url('./assests/back.jpg');
+        background-image: url('back.jpg');
         background-repeat: no-repeat;
         background-size: cover;
      display:table;
