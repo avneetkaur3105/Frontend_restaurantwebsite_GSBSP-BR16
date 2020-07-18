@@ -15,7 +15,7 @@ nav{
   font-size: 20px;
 }
 .landing {
-  background-image: url("./assests/back2.jpg");
+  background-image: url("back2.jpg");
   background-repeat: no repeat;
   background-size: 100% 100%;
   display: table;
