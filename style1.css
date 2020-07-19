@@ -3,19 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body{
+  overflow-x: hidden;
+}
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-nav{
-    position: fixed; /* Set the navbar to fixed position */
-  top: 0;
-}
+
 .nav-item a {
   color: black;
   font-size: 20px;
 }
 .landing {
-  background-image: url('back2.jpg');
+  background-image: url("./assests/back2.jpg");
   background-repeat: no repeat;
   background-size: 100% 100%;
   display: table;
@@ -29,7 +29,6 @@ nav{
   font-weight: 600;
   font-size: 4rem;
   margin-top: 10%;
-  z-index: -1;
 }
 .landing p {
   text-align: center;
@@ -60,13 +59,16 @@ nav{
 .head {
   text-align: center;
   margin: 20px auto;
-  font-size: 75px;
+  font-size: 50px;
   font-weight: bold;
 }
 .about{
+  display:table;
     height: 100vh;
     width: 100%;
 }
+
+
 .extradiv {
   background: #ffcac2;
   border: medium none;
@@ -74,6 +76,7 @@ nav{
   border-radius: 15px;
   transition: 0.3s;
   text-align: center;
+  overflow: hidden;
 }
 .center {
     display: block;
@@ -86,4 +89,73 @@ nav{
 
   }
   
+  .menu{
+    display: table;
+    height: 100vh;
+      width: 100%;
+  }  
+  .menu .inner{
+    display:flex;
+    justify-content: center;
+  }
+  .card{
+    margin: 20px;
+  }
+
+.photogallery{
+  display: table;
+    height: 100vh;
+      width: 100%;
+      padding-bottom: 20px;
+  background-color: brown;
+}
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+.carousel-inner img {       
+  display:block;
+  height: auto; 
+  max-width: 100%;
+}
+
+.contact{
+  display: table;
+    height: 100vh;
+      width: 100%;
+}
+
+  @media (max-width: 768px){
+
+    .menu .inner{
+      display: flex;
+      justify-content: center;
+      
+      text-align: center;
+      padding:50px 0;
+margin-right:20px;
+
+  }
+.photogallery{
+  height: 50vh;
+  width:100%;
+}
+iframe{
+  width:75%;
+  height:75%;
+
+}
+.head{
+  font-size: 40px;
+  text-align: center;
+  margin: 5px auto;
+}
+.contact{
   
+  font-size: 12px;
+  overflow: hidden;
+}
+.contact .inner{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+}
